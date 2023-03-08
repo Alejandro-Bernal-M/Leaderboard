@@ -1,5 +1,6 @@
 import getScore from './getScore.js';
 import constructHTML from './constructHTML.js';
+
 const scoreHolder = document.querySelectorAll('.li-scores');
 
 export default () => {

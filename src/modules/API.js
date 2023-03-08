@@ -1,6 +1,6 @@
 const apiUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
-const game = { 
-	name: 'My leaderboard new game', 
+const game = {
+  name: 'My leaderboard new game',
 };
 
 const config = {
@@ -12,10 +12,8 @@ const config = {
 };
 
 async function setGame() {
- const response = fetch(apiUrl, config).then((response) => response.json());
- return response;
+  const response = fetch(apiUrl, config).then((response) => response.json());
+  return response;
 }
 
 export default setGame;
-
-
