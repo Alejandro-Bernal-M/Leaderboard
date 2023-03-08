@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
   const score = document.querySelector('.score');
   setScore(name.value, parseInt(score.value, 10));
   form.reset();
-  setTimeout(refreshHTML(), 1500);
+  setTimeout(refreshHTML(), 1000);
   msg.innerHTML = 'Score saved';
   setTimeout(() => {
     msg.innerHTML = '';
