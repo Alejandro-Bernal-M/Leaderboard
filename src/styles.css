@@ -2,6 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(120deg, rgb(18, 145, 60), rgb(99, 233, 146));
 }
 
 h2 {
@@ -9,13 +19,14 @@ h2 {
 }
 
 .h1 {
-  font-size: 4rem;
+  max-height: 200px;
+  font-size: 10vh;
   margin: 5% 0 0 11%;
 }
 
 .main-div {
   display: flex;
-  padding: 5% 10% 0 10%;
+  padding: 3% 10% 0 10%;
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -39,6 +50,8 @@ h2 {
   border: 2px solid black;
   height: auto;
   min-height: 100px;
+  border-radius: 6px;
+  padding: 5px;
 }
 
 .ul-scores {
@@ -50,11 +63,22 @@ h2 {
 }
 
 .li-scores {
-  height: 30px;
+  display: flex;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  gap: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
 }
 
-.bg-gray {
-  background-color: #bbb;
+.bg-1 {
+  background-color: #298953;
+}
+
+.bg-2 {
+  background-color: rgb(152, 250, 186);
 }
 
 .div-add-scores {
@@ -76,18 +100,31 @@ h2 {
 .form > label,
 .form-input {
   width: 100%;
+  background-color: rgb(152, 250, 186);
+  color: black;
+  font-size: 20px;
+  border-radius: 7px;
 }
 
 .form-input {
   border: 2px solid black;
-  height: 30px;
+  height: 40px;
   padding-left: 10px;
+  border-radius: 7px;
 }
 
 .btn {
-  width: 70px;
-  height: 30px;
-  background: #fff;
+  width: 80px;
+  height: 40px;
+  background: rgb(41, 136, 74);
   border: 2px solid black;
-  box-shadow: 2px 2px 2px;
+  box-shadow: 2px 2px 2px #fff;
+  color: #d9ffe1;
+  font-size: 20px;
+}
+
+.btn:active {
+  transform: translateX(3px);
+  transform: translateY(3px);
+  box-shadow: 2px 2px 3px 2px #d9ffe1;
 }
