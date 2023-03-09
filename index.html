@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+<script defer src="main.js"></script></head>
+<body>
+  <h1 class="h1">Leaderboard</h1>
+  <div class="main-div">
+    <div class="div-scores">
+    <div class="title-scores">
+      <h2 class="recent-scores">Recent scores</h2>
+      <button class="btn-refresh btn">Refresh</button>
+    </div>
+    <div class="score-holder">
+      <ul class="ul-scores">
+        <li class="li-scores"></li>
+        <li class="li-scores bg-gray"></li>
+        <li class="li-scores "></li>
+        <li class="li-scores bg-gray"></li>
+        <li class="li-scores"></li>
+        <li class="li-scores bg-gray"></li>
+        <li class="li-scores"></li>
+      </ul>
+    </div>
+    </div>
+    <div class="div-add-scores">
+      <h2 class="title-add-scores">Add your score</h2>
+      <p class="msg"></p>
+      <form class="form">
+        <label ><input class="form-input name" type="text" placeholder="Your name"></label>
+        <label ><input class="form-input score" type="text" placeholder="Your score"></label>
+        <button type="submit" class="btn-add btn">submit</button>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
