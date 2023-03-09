@@ -5,12 +5,14 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack serve --open"
+    "build": "webpack --mode=development",
+    "start": "webpack serve --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alejandro-Bernal-M/Leaderboard.git"
+    "url": "git+https://alejandro-bernal-m.github.io/Leaderboard/.git"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +29,7 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
